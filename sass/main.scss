@@ -1,0 +1,905 @@
+@import 'colors';
+@import 'animate';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+.underline{
+    height: 4px;
+    width: 150px;
+    margin: 0 auto 40px;
+    background-color:$main-color ;
+}
+
+.img-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .4);
+    z-index: -1;    
+}
+
+.bg-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-img{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 10;
+}
+
+.hero-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.section-header{
+    font-size: 4rem;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(15, 15, 15);
+    z-index: 100;
+
+    .navbar-brand{
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .navbar-toggler{
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .navbar-nav{
+        font-size: 2rem;
+        
+    }
+
+    .nav-link{
+        font-size: 2.5rem;
+        text-shadow: 2px 2px black;
+    }
+
+    a{
+        text-shadow: 2px 2px black;
+    }
+
+    i{
+        color: $main-color;
+    }
+
+    span{
+        color: $main-color;
+    }
+      
+    
+}
+
+header{
+
+    position: relative;
+
+    .first-hero-img{
+        background-image: url('../img/marriage-gfe5268b44_1920.jpg');
+    }
+
+    .second-hero-img{
+        background-image: url('../img/couple-gb150615bb_1920.jpg');
+    }
+
+    .third-hero-img{
+        background-image: url('../img/love-gfcb1c5d32_1920.jpg');
+    }
+
+        .hero-text{
+            font-family: 'Caveat', cursive;
+        }
+
+        h2{
+            font-size: 6.5rem;
+        }
+    }
+
+
+.aboutus{
+
+    .name{
+        font-size: 3.5rem;
+    }
+
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+            height: 300px;
+        }
+    }
+
+    .aboutus-text{
+        font-size: 1.6rem;
+    }
+
+    .btn-aboutus{
+        font-size: 2rem;
+        color: white;
+        background-color: $main-color;
+        transition: background-color 0.3s;
+        border-radius: 10px;
+    }
+
+   .btn-aboutus:hover{
+       background-color: rgba(0, 0, 0, 0.9);
+   }
+
+}
+
+.offer{
+    background-color: $bg-color;
+}
+
+
+.recommodation{
+
+    p{
+        font-style: italic;
+    }
+    
+    .carousel-item{
+        position: relative;
+        height: 600px;
+    }
+
+        .carousel-caption{
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding: 40px 0;
+            background-color: rgba(0, 0, 0, .85);
+        }
+
+        .carousel-indicators{
+            padding-bottom: 20px;
+        }
+
+        .card-group{
+            text-align: center;
+
+            h5{
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
+}
+
+footer{
+
+background-color: rgb(15, 15, 15);
+
+padding: 5rem 0;
+    p{
+        font-size: 2rem;
+    }
+
+    i{
+        color: $main-color;
+    }
+
+    span{
+        color: $main-color;
+    }
+}
+
+.last-weeding{
+    padding-top: 6em;
+
+    .weeding-card{
+
+        .weeding-img{
+            position: relative;
+            height: 200px;
+            z-index: 1;
+            transition: transform 1s;
+            background-size: cover;
+    
+            .text-shadow{
+                position: relative;
+                text-shadow: 2px 2px black;
+                top: 50%;
+                font-size: 3.5rem;
+            }
+    }
+
+    }
+
+    .last-weeding-one{
+        background-image: url('../img/portfolio/newlyweds-ge075acc8b_1920.jpg');
+    }
+
+    .last-weeding-two{
+        background-image: url('../img/portfolio/blog-gdzie-wesele-jak-zaplanowac-slub-koscielny.jpg');
+    }
+
+    .weeding-img:hover{
+        transform: scale(0.9);
+    }
+}
+
+.portfolio{
+    
+    .card{
+
+        .card-img{
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h5{
+                font-size: 2.4rem;
+            }
+    
+            .btn-portfolio{
+                font-size: 2.2rem;
+                background-color: $main-color;
+                transition: background-color 0.3s;
+                border-radius: 10px;
+            }
+
+            .btn-portfolio:hover{
+                background-color: rgba(0, 0, 0, .85);
+            }
+
+        }
+
+        .card-one
+        {
+            background-image: url('../img/portfolio/slub-plenerowy-slub-cywilny-w-plenerze_7-1024x683.jpg');
+        }
+
+        .card-two
+        {
+            background-image: url('../img/portfolio/z27350555Q\,Sluby-koscielne-coraz-drozsze--W-niektorych-parafi.jpg');
+        }
+
+        .card-three
+        {
+            background-image: url('../img/portfolio/montaz_12.jpg');
+        }
+
+        .card-four
+        {
+            background-image: url('../img/portfolio/lista-rzeczy-do-zrobienia-na-tydzien-przed-slubem_5cc1ed15.jpeg');
+        }
+
+        .card-five
+        {
+            background-image: url('../img/portfolio/pomysl_na_wesele-1024x600.jpg');
+        }
+
+        .card-six
+        {
+            background-image: url('../img/portfolio/wesele-z-dziecmi-czy-bez_61e0957c.jpeg');
+        }
+
+        .card-seven
+        {
+            background-image: url('../img/portfolio/wesele-w-czasie-pandemii.jpg');
+        }
+
+        .card-eight
+        {
+            background-image: url('../img/portfolio/gf-VR1a-eiPm-3eqZ_slub-i-wesele-w-piatek-wazna-decyzja-arcybiskupa-kosciol-zmienil-zdanie-1920x1080-nocrop.jpg');
+        }
+
+        .card-nine
+        {
+            background-image: url('../img/portfolio/0236.jpg');
+        }
+
+    }
+}
+
+.studio{
+    position: relative;
+
+.hero-img{
+
+    .bg-shadow{
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    height: 50vh;
+        background-image: url('../img/studio/photography-1850469_960_720.jpg');
+}
+
+.hero-text{
+
+    h5{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 7rem;
+    }
+}
+}
+
+.offer{
+
+    .offer-card{
+        i{
+            color: $main-color;
+            font-size: 4.5rem;
+        }
+
+        h5{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.services{
+
+    h5{
+        font-size: 4rem;
+    }
+
+    .card{
+        height: 25vh;
+        background-attachment: local;
+    }
+
+        .bg-shadow{
+            background-color: rgba(0, 0, 0, .7);
+        }
+
+        .card-one{
+            background-image: url('../img/studio/blueberries-g9506bbe8e_1920.jpg');
+        }
+
+        .card-two{
+            background-image: url('../img/studio/woman-g7c12ad4fe_1920.jpg');
+        }
+
+        .card-three{
+            background-image: url('../img/studio/bed-1839564_960_720.jpg.webp');
+        }
+
+        .card-four{
+            background-image: url('../img/studio/ballerina-g1e9d6cb0e_1920.jpg');
+        }
+}
+
+.map{
+
+    iframe{
+        height: 40vh;
+        width: 100%;
+    }
+}
+
+.weeding-offer{
+    background-color: $bg-color;
+    padding-top: 6em;
+
+    .img{
+        position: relative;
+        height: 400px;
+        background-image: url('../img/oferta/heart-gf015dfc52_1920.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-group{
+
+        .card{
+            transition: transform 1s;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+
+            .card-head{
+                font-size: 3rem;
+                color: black;
+            }
+
+            .card-body{
+                font-size: 1.5rem;
+
+                i{
+                    font-size: 1.9rem;
+                }
+                .fa-xmark{
+                    color: red;
+                }
+
+                .fa-check{
+                    color: green;
+                }
+            }
+
+            .card-foot{
+                font-size: 2.5rem;
+
+                .btn{
+                    color: white;
+                    font-size: 2rem;
+                    transition: background-color 0.5s;
+                    border-radius: 10px;
+                }
+
+                .btn-dark:hover{
+                    background-color: $main-color;
+                }
+            }
+
+            .card-middle{
+                color: $main-color;
+
+                    .btn{
+                        background-color: $main-color;
+                        transition: background-color 0.5s;
+                    }
+
+                    .btn:hover{
+                        background-color: #212529;
+                    }
+            }
+
+        }
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+}
+
+.form{
+    padding-top: 6em;
+
+    h5{
+        font-size: 4rem;
+    }
+
+    .card{
+        font-size: 1.8rem;
+
+        input, option, select, textarea{
+            font-size: 2rem;
+        }
+    
+        .btn{
+            font-size: 2rem;
+            color: white;
+            background-color: $main-color;
+            transition: background-color 0.5s;
+            border-radius: 10px;
+        }
+
+        .btn:hover{
+            background-color: rgba(0, 0, 0, .85);
+        }
+
+    }
+
+        p{
+            font-size: 1.8rem;
+        }
+
+        .title-p{
+            font-size: 2.5rem;
+        }
+
+        .contact-card-foot{
+            p{
+                font-weight: bold;
+                font-size: 3rem;
+            }
+
+            i{
+                color: $main-color;
+            }
+        
+            span{
+                color: $main-color;
+            }
+
+        }
+    }
+
+.social-media{
+    background-color: $bg-color;
+
+    i{
+        font-size: 5rem;
+    }
+
+    .fa-facebook-square{
+        color: royalblue;
+    }
+
+    .fa-youtube{
+        color: red;
+    }
+
+    .fa-instagram{
+       color: #c13584;
+    }
+
+    .fa-linkedin{
+        color: skyblue;
+    }
+
+    .social-header{
+        font-size: 2.2rem;
+    }
+}
+
+@media(min-width:768px)
+{
+    footer{
+        p{
+            font-size: 2.5rem;
+        }
+    }
+
+    nav{
+        .navbar-brand{
+            font-size: 3rem;
+        }
+    }
+
+    header{
+        .hero-text{
+
+        h2{
+            font-size: 12rem;
+        }
+    }
+    }
+
+    .aboutus{
+
+.btn-aboutus{
+    font-size: 2.5rem;
+}
+        .img{
+
+            img{
+                height: 400px;
+            }
+        }
+
+        h5{
+            font-size: 5rem;
+        }
+    
+        .name{
+            font-size: 4rem;
+        }
+
+        .aboutus-text{
+            font-size: 1.8rem;
+        }
+
+        .btn-parent{
+            padding-right: 10px;
+           }
+    }
+
+    .recommodation{
+
+        .card-group{
+            width: 100%;
+
+            .card{
+                width: 18em;
+
+                .card-body{
+                    height: 200px;
+                }
+        }
+
+        h5{
+            text-align: center;
+            font-style: normal;
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+    }
+}
+
+.last-weeding{
+
+.weeding-card{
+
+    .weeding-img{
+        height: 300px;
+
+        .text-shadow{
+            font-size: 4rem;
+        }
+}
+
+}
+}
+
+.studio{
+
+    .hero-text{
+
+        h5{
+            font-size: 12rem;
+        }
+    }
+}
+
+.offer{
+
+    h5{
+        font-size: 5rem;
+    }
+
+    .offer-card{
+        i{
+            font-size: 5rem;
+        }
+
+    }
+}
+
+.services{
+
+    h5{
+        font-size: 6rem;
+    }
+
+    .card{
+
+        h5{
+            font-size: 5rem;
+        }
+    }
+
+}
+
+.map{
+    h5{
+        font-size: 6rem;
+    }
+}
+
+.weeding-offer{
+
+    h5{
+        font-size: 6rem;
+    }
+
+    .img{
+        height: 500px;
+    }
+
+    .card-group{
+
+        .card{
+            
+            .card-head{
+                font-size: 3.5rem;
+            }
+
+            .card-body{
+                font-size: 1.9rem;
+
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+
+            .card-foot{
+                font-size: 3rem;
+
+                .btn{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+.form{
+
+    h5{
+        font-size: 6rem;
+    }
+
+    .form-cards{
+
+        h5{
+            font-size: 5rem;
+        }
+
+        .card{
+            font-size: 1.8rem;
+    
+            input, option, select, textarea{
+                font-size: 2rem;
+            }
+        
+            .btn{
+                padding: 0.5rem 3rem;
+                font-size: 3rem;
+            }
+    
+        }
+    
+        .card{
+
+            p{
+                font-size: 2rem;
+            }
+    
+            .title-p{
+                font-size: 2.8rem;
+            }
+    
+            .contact-card-foot{
+                p{
+                    font-weight: bold;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+.social-media{
+
+    h5{
+        font-size: 6rem;
+    }
+}
+
+.portfolio{
+    .card{
+
+        .card-body{
+            h5{
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+}
+
+@media(min-width: 992px)
+{
+
+    .recommodation{
+
+        h5{
+            font-size: 5rem;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    .last-weeding{
+
+        h5{
+            font-size: 5rem;
+        }
+
+        .weeding-card{
+        
+            .weeding-img{
+                height: 400px;
+                .text-shadow{
+                    font-size: 5rem;
+                }
+        }
+        
+        }
+        }
+
+        .last-weeding{
+            
+            h5{
+                font-size: 6rem;
+            }
+        }
+
+        .portfolio{
+
+            h5{
+                font-size: 6rem;
+            }
+        }
+
+        .services{
+
+            .card{
+
+                h5{
+                    font-size: 5rem;
+                }
+
+                .map{
+                    font-size: 6rem;
+                }
+            }
+        }
+
+        .weeding-offer{
+
+            .img{
+                height: 600px;
+            }
+
+            .card-group{
+
+                .card{
+
+                    .card-head{
+                        font-size: 4rem;
+                    }
+        
+                    .card-body{
+                        font-size: 2.2rem;
+        
+                        i{
+                            font-size: 3rem;
+                        }
+                    }
+        
+                    .card-foot{
+                        font-size: 3.5rem;
+        
+                        .btn{
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+}
